@@ -1,2 +1,2 @@
-# Chess-Puzzles-in-Python
-A number of chess puzzle solutions, written in Python.
+# Puzzles-in-Python
+A number of puzzle solutions, written in Python.
