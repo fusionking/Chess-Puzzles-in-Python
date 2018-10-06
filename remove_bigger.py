@@ -9,10 +9,8 @@ class Node:
 
 class LinkedList:
     
-
     def __init__(self):
         self.head = None
-
 
     def append(self, data):
         new_node = Node(data)
@@ -23,8 +21,7 @@ class LinkedList:
             while current.next is not None:
                 current = current.next
             current.next = new_node
-
-            
+   
     def length(self):
         current = self.head
         total = 0
@@ -32,8 +29,7 @@ class LinkedList:
             total += 1
             current = current.next
         return total
-
-        
+  
     def display(self):
         elems = []
         current = self.head
@@ -41,7 +37,6 @@ class LinkedList:
             elems.append(current.data)
             current = current.next
         print(elems)
-
 
     def get(self, key):
         cur_node = self.head
@@ -51,7 +46,6 @@ class LinkedList:
             cur_node = cur_node.next
         return None
     
-
     def erase(self, key):
         if not self.get(key):
             print("The key {} is not found".format(key))
